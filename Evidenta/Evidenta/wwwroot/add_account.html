@@ -1,0 +1,169 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Manager Platform</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/lib/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="/lib/bootstrap/dist/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/css/main.min.css" />
+</head>
+
+<body>
+    <!-- ====================== NAVBAR ============================ -->
+    <nav class="navbar navbar-expand-md navbar-dark bg-primary">
+        <a class="navbar-brand " href="/pages/login.html">University of Craiova</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTarget"
+                aria-controls="navbarTarget" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-md-right " id="navbarTarget">
+            <ul class="nav navbar-nav ml-auto mr-5 ">
+                <li class="nav-item active about pr-4">
+                    <a class="nav-link " href="#">Update Account</a>
+                </li>
+                <li class="nav-item active getAccount">
+                    <a class="nav-link " href="/add_account.html">Add Account</a>
+                </li>
+
+                <li class="nav-item active getAccount">
+                    <a class="nav-link " href="/change_pw.html">c</a>
+                </li>
+                <li class="nav-item active getAccount">
+                    <a class="nav-link " href="/student_page.html">s</a>
+                </li>
+                <li class="nav-item active getAccount">
+                    <a class="nav-link " href="/student_upload.html">u</a>
+                </li>
+                <li class="nav-item active getAccount">
+                    <a class="nav-link " href="/teacher_add_project.html">p</a>
+                </li>
+                <li class="nav-item active getAccount">
+                    <a class="nav-link " href="/teacher_grade.html">g</a>
+                </li>
+                <li class="nav-item active getAccount">
+                    <a class="nav-link " href="/teacher_review.html">r</a>
+                </li>
+                <li class="nav-item active getAccount">
+                    <a class="nav-link " href="/teacher_subjects.html">s</a>
+                </li>
+
+
+
+            </ul>
+        </div>
+    </nav>
+    <!-- Navbar end -->
+    <!--Add Account  start -->
+    <div class="container">
+        <form class="form-signin change_pw">
+            <div class="text-center ">
+                <h1 class="h1 mb-4 font-weight-bold text-dark">Add Account</h1>
+            </div>
+
+
+            <div class="form-label-group  mb-1">
+                <label class="text-dark font-weight-bold " for="text">Username</label>
+                <input type="text" class="add_account form-control" placeholder="Username" />
+            </div>
+
+            <div class="form-label-group  Teacher mb-1">
+                <label class="text-dark font-weight-bold " for="text">First Name</label>
+                <input type="text" class="add_account form-control" placeholder="First Name" />
+            </div>
+
+            <div class="form-label-group  Teacher mb-1">
+                <label class="text-dark font-weight-bold " for="text">Last Name</label>
+                <input type="text" class="add_account form-control" placeholder="Last Name" />
+            </div>
+
+
+
+
+            <div class="form-label-group mb-1">
+                <label class="text-dark font-weight-bold" for="inputPassword">Year</label>
+                <input type="text" class="add_account form-control" placeholder=" Year" required>
+            </div>
+
+            <div class="form-label-group mb-1 Student">
+                <label class="text-dark font-weight-bold" for="inputPassword">Specialization</label>
+                <input type="text" class="add_account form-control" placeholder=" Specialization" required
+                       autofocus>
+            </div>
+
+            <div class="form-label-group mb-1 Student">
+                <label class="text-dark font-weight-bold" for="inputPassword">Group</label>
+                <input type="text" class="add_account form-control" placeholder=" Group" required>
+            </div>
+
+         
+                <div class="form-label-group mb-1">
+                    <label class="text-dark font-weight-bold" for="inputPassword">Discipline</label>
+                    <input type="text" class="add_account form-control" placeholder=" Discipline" required autofocus>
+                </div>
+            
+
+
+
+            <br>
+            <div class="text-center">
+                <button class="btn buton btn-primary  " type="submit">Submit</button>
+            </div>
+        </form>
+        </div>
+    
+    <!-- Add Account  end -->
+    <!-- Footer start -->
+    <p class="footer mb-0 text-muted text-center footer_add_account">
+        &copy; 2020
+    </p>
+    <!-- Footer end -->
+    <!-- ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="../../../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+    <script src="/js/popper.min.js" crossorigin="anonymous"></script>
+    <script src="/js/bootstrap.min.js"></script>
+
+    <script>
+        filterSelection("Teacher")
+        function filterSelection(c) {
+            var x, i;
+            x = document.getElementsByClassName("filterDiv");
+            if (c == "all") c = "";
+            for (i = 0; i < x.length; i++) {
+                w3RemoveClass(x[i], "show");
+                if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+            }
+        }
+
+        function w3AddClass(element, name) {
+            var i, arr1, arr2;
+            arr1 = element.className.split(" ");
+            arr2 = name.split(" ");
+            for (i = 0; i < arr2.length; i++) {
+                if (arr1.indexOf(arr2[i]) == -1) { element.className += " " + arr2[i]; }
+            }
+        }
+
+        function w3RemoveClass(element, name) {
+            var i, arr1, arr2;
+            arr1 = element.className.split(" ");
+            arr2 = name.split(" ");
+            for (i = 0; i < arr2.length; i++) {
+                while (arr1.indexOf(arr2[i]) > -1) {
+                    arr1.splice(arr1.indexOf(arr2[i]), 1);
+                }
+            }
+            element.className = arr1.join(" ");
+        }
+
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,133 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Manager Platform</title>
+    <link rel="stylesheet" href="/lib/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="/lib/bootstrap/dist/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/css/main.min.css" />
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+
+<body>
+    <!-- ====================== NAVBAR ============================ -->
+    <nav class="navbar navbar-expand-md navbar-dark bg-primary">
+        <a class="navbar-brand " href="/pages/login.html">University of Craiova</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTarget"
+                aria-controls="navbarTarget" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-md-right " id="navbarTarget">
+            <ul class="nav navbar-nav ml-auto mr-5 ">
+                <li class="nav-item active about pr-4">
+                    <a class="nav-link " href="/teacher_subjects.html">Account</a>
+                </li>
+                <li class="nav-item active getAccount">
+                    <a class="nav-link " href="/teacher_review.html">Review Projects</a>
+                </li>
+                <li class="nav-item active getAccount">
+                    <a class="nav-link " href="/teacher_add_project.html">Add New project</a>
+                </li>
+
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Form start-->
+    <form class="upload">
+        <div class="text-center mb-4">
+            <h1 class="h1 mb-3 font-weight-bold text-dark">Review Projects</h1>
+        </div>
+
+        <div class="form-group">
+            <label for="exampleFormControlSelect1">Choose Discipline:</label>
+            <select class="form-control" id="exampleFormControlSelect1">
+                <option>Dicipline 1</option>
+                <option>Dicipline 2</option>
+                <option>Dicipline 3</option>
+                <option>Dicipline 4</option>
+                <option>Dicipline 5</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="exampleFormControlSelect1">Choose the Project</label>
+            <select class="form-control" id="exampleFormControlSelect1">
+                <option>Project 1</option>
+                <option>Project 2</option>
+                <option>Project 3</option>
+                <option>Project 4</option>
+                <option>Project 5</option>
+            </select>
+        </div>
+    </form>
+    <!-- Form end-->
+    <!-- TABLE-->
+    <div class="container mt-5">
+        <table class="table table-bordered table-hover table-striped content-table1">
+            <h3 class="text-dark text-center mb-4 mt-0">List of Projects to be reviewed:</h3>
+            <thead>
+                <tr>
+                    <th class="pr-5 padding_20_column grade_table">student name </th>
+                    <th class="small_th grade_table">year</th>
+                    <th class="small_th grade_table">group</th>
+                    <th class="small_th grade_table">speciality</th>
+                    <th class="small_th grade_table">project title</th>
+                    <th class="small_th grade_table">download</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="grade_table">
+                    <td class=" grade_table padding_20_column">Sergiu Voloc</td>
+                    <td class="grade_table">3</td>
+                    <td class="grade_table">CR 3.1</td>
+                    <td class="grade_table">Computer Science</td>
+                    <td class="grade_table"><a href="/pages/teacher_grade.html">Homework 1 APD</a></td>
+                    <td class="text-center grade_table"><button><i class="fas fa-file-download"></i></button></td>
+                </tr>
+                <tr class="grade_table">
+                    <td class=" grade_table padding_20_column">Sergiu Voloc</td>
+                    <td class="grade_table">3</td>
+                    <td class="grade_table">CR 3.1</td>
+                    <td class="grade_table">Computer Science</td>
+                    <td class="grade_table"><a href="/pages/teacher_grade.html">Homework 1 APD</a></td>
+                    <td class="text-center grade_table"><button><i class="fas fa-file-download"></i></button></td>
+                </tr>
+                <tr class="grade_table">
+                    <td class=" grade_table padding_20_column">Sergiu Voloc</td>
+                    <td class="grade_table">3</td>
+                    <td class="grade_table">CR 3.1</td>
+                    <td class="grade_table">Computer Science</td>
+                    <td class="grade_table"><a href="/pages/teacher_grade.html">Homework 1 APD</a></td>
+                    <td class="text-center grade_table"><button><i class="fas fa-file-download"></i></button></td>
+                </tr>
+                <tr class="grade_table">
+                    <td class=" grade_table padding_20_column">Sergiu Voloc</td>
+                    <td class="grade_table">3</td>
+                    <td class="grade_table">CR 3.1</td>
+                    <td class="grade_table">Computer Science</td>
+                    <td class="grade_table"><a href="/pages/teacher_grade.html">Homework 1 APD</a></td>
+                    <td class="text-center grade_table"><button><i class="fas fa-file-download"></i></button></td>
+                </tr>
+
+            </tbody>
+        </table>
+    </div>
+    <!-- TABLE-->
+    <!-- Footer start -->
+    <p class="footer mb-0 text-muted text-center footer_change_pw">
+        &copy; 2020
+    </p>
+    <!-- Footer end -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="../../../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+    <script src="/js/popper.min.js" crossorigin="anonymous"></script>
+    <script src="/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

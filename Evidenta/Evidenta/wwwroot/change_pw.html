@@ -1,0 +1,74 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="A online platform for managing university projects" />
+    <meta name="author" content="Voloc Sergiu" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project Manager Platform</title>
+    <!-- <link rel="stylesheet" href="css/normalize.css" /> -->
+    <link rel="stylesheet" href="/lib/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="/lib/bootstrap/dist/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/css/main.min.css" />
+
+</head>
+
+<body>
+    <!-- ====================== NAVBAR ============================ -->
+    <nav class="navbar navbar-expand-md navbar-dark bg-primary">
+        <a class="navbar-brand " href="/pages/login.html">University of Craiova</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTarget"
+                aria-controls="navbarTarget" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-md-right" id="navbarTarget">
+            <ul class="nav navbar-nav ml-auto mr-5 ">
+                <li class="nav-item active ">
+                    <a class="nav-link" href="/pages/change_pw.html">Change Password</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Navbar end -->
+    <!-- Change password start -->
+    <form class="form-signin change_pw">
+        <div class="text-center mb-4">
+            <h1 class=" h1 mb-4 font-weight-bold text-dark">Change Your Password</h1>
+            <h5 class="text-muted">Create a new password. And don't forget to save!</h5>
+        </div>
+
+        <div class="form-label-group mb-2 mt-5">
+            <label class="text-dark font-weight-bold" for="inputPassword">Old Password</label>
+            <input type="password" id="inputPassword" class="form-control" placeholder="Old Password" required
+                   autofocus>
+        </div>
+
+        <div class="form-label-group mb-2">
+            <label class="text-dark font-weight-bold" for="inputPassword">New Password</label>
+            <input type="password" id="inputPassword" class="form-control" placeholder="New Password" required>
+        </div>
+
+        <div class="form-label-group mb-5">
+            <label class="text-dark font-weight-bold" for="inputPassword">Confirm New Password</label>
+            <input type="password" id="inputPassword" class="form-control" placeholder=" Confirm New Password" required>
+        </div>
+
+        <button class="btn btn-lg btn-primary btn-block submit_btn" type="submit">Change Password</button>
+    </form>
+    <!-- Change password end -->
+    <!-- Footer start -->
+    <p class="footer mb-0 text-muted text-center footer_change_pw">
+        &copy; 2020
+    </p>
+    <!-- Footer end -->
+    <!-- ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="../../../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+    <script src="/js/popper.min.js" crossorigin="anonymous"></script>
+    <script src="/js/bootstrap.min.js"></script>
+</body>
+
+</html>

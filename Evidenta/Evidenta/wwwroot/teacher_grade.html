@@ -1,0 +1,120 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grade Project</title>
+    <link rel="stylesheet" href="/lib/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="/lib/bootstrap/dist/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/css/main.min.css" />
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+
+<body>
+    <!-- ====================== NAVBAR ============================ -->
+    <nav class="navbar navbar-expand-md navbar-dark bg-primary">
+        <a class="navbar-brand " href="/pages/login.html">University of Craiova</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTarget"
+                aria-controls="navbarTarget" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-md-right " id="navbarTarget">
+            <ul class="nav navbar-nav ml-auto ">
+                <li class="nav-item active account pr-5 nav_grade small_width ">
+                    <a class="nav-link" href="/teacher_subjects.html">Account </a>
+                </li>
+                <li class="nav-item active getAccount nav_grade">
+                    <a class="nav-link  " href="/teacher_review.html">Review Projects</a>
+                </li>
+                <li class="nav-item active getAccount nav_grade small_width">
+                    <a class="nav-link  " href="#">Grading</a>
+                </li>
+
+            </ul>
+        </div>
+    </nav>
+    <!-- TEXT -->
+    <div class="main_text3 text-center mt-5">
+        <h1 class="font-weight-bold ">Grade Project</h1>
+    </div>
+    <!-- END TEXT -->
+
+    <div class="justify-content-cente">
+        <div class="container">
+            <form class="mt-2">
+                <div class="form-row align-items-center">
+                    <div class="col-auto ">
+                        <input type="text" class="form-control mb-2" id="inlineFormInput"
+                               placeholder="Insert Project ID">
+                    </div>
+                    <div class="col-auto ">
+                        <button type="submit" class="btn btn-primary mb-2 submit_btn">Search</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- TABLE-->
+    <div class="container mt-5">
+        <table class="table table-bordered table-hover table-striped content-table1">
+            <thead>
+                <tr>
+                    <th class="pr-5 padding_20_column grade_table">student name </th>
+                    <th class="small_th grade_table">year</th>
+                    <th class="small_th grade_table">group</th>
+                    <th class="small_th grade_table">speciality</th>
+                    <th class="small_th grade_table">date</th>
+                    <th class="small_th grade_table">project title</th>
+                    <th class="small_th grade_table">download</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="grade_table">
+                    <td class=" grade_table padding_20_column">Sergiu Voloc</td>
+                    <td class="grade_table">3</td>
+                    <td class="grade_table">CR 3.1</td>
+                    <td class="grade_table">Computer Science</td>
+                    <td class="grade_table"> 15.05.2020</td>
+                    <td class="grade_table">Homework 1 APD</td>
+                    <td class="text-center grade_table"><button><i class="fas fa-file-download"></i></button></td>
+                </tr>
+
+
+            </tbody>
+        </table>
+    </div>
+    <!-- TABLE-->
+    <!--  TEXTBOX AND BUTTON -->
+    <div class="text-center">
+        <div class="container">
+            <form>
+                <div class="form-group">
+                    <label class="float-left font-weight-bold h6 ">Give the final grade:</label>
+                    <input type="text" class="form-control" id="new_project" placeholder="Grade">
+                </div>
+
+                <div class="form-group">
+                    <textarea class="form-control" rows="5" id="comment" placeholder="Enter comments here"></textarea>
+                </div>
+            </form>
+        </div>
+
+        <button class="btn btn-lg btn-primary  submit_btn" type="submit">Submit</button>
+    </div>
+    <!--  END  TEXTBOX AND BUTTON -->
+    <!-- Footer start -->
+    <p class="footer mb-0 text-muted text-center footer_change_pw">
+        &copy; 2020
+    </p>
+    <!-- Footer end -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="../../../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+    <script src="/js/popper.min.js" crossorigin="anonymous"></script>
+    <script src="/js/bootstrap.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,83 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Project </title>
+    <link rel="stylesheet" href="/lib/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="/lib/bootstrap/dist/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/css/main.min.css" />
+</head>
+
+<body>
+    <!-- ====================== NAVBAR ============================ -->
+    <nav class="navbar navbar-expand-md navbar-dark bg-primary">
+        <a class="navbar-brand " href="/pages/login.html">University of Craiova</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTarget"
+                aria-controls="navbarTarget" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-md-right " id="navbarTarget">
+            <ul class="nav navbar-nav ml-auto mr-5 ">
+                <li class="nav-item active about pr-4">
+                    <a class="nav-link " href="/teacher_subjects.html">Account</a>
+                </li>
+                <li class="nav-item active getAccount">
+                    <a class="nav-link " href="/teacher_review.html">Review Projects</a>
+                </li>
+                <li class="nav-item active getAccount">
+                    <a class="nav-link " href="/teacher_add_project.html">Add New project</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- TEXT -->
+    <div class="main_text4 text-center">
+        <h1 class="font-weight-bold ">Add New Project</h1>
+    </div>
+    <!-- END TEXT -->
+    <!--  TEXTBOX AND BUTTON -->
+    <div class="text-center">
+        <div class="container">
+            <form>
+                <div class="form-group">
+                    <label class="float-left font-weight-bold h6 mt-5">Give a title to your assignment:</label>
+                    <input type="text" class="form-control" id="new_project" placeholder="Project title">
+                </div>
+
+                <div class="form-group">
+                    <label class="float-left font-weight-bold h6">Choose the Dicipline:</label>
+                    <select class="form-control mb-5" id="new_project">
+                        <option>Dicipline 1</option>
+                        <option>Dicipline 2</option>
+                        <option>Dicipline 3</option>
+                        <option>Dicipline 4</option>
+                        <option>Dicipline 5</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <textarea class="form-control" rows="5" id="comment"
+                              placeholder="Enter assignment descripton here"></textarea>
+                </div>
+            </form>
+        </div>
+
+        <button class="btn btn-lg btn-primary  submit_btn" type="submit">Submit</button>
+    </div>
+    <!--  END  TEXTBOX AND BUTTON -->
+    <!-- Footer start -->
+    <p class="footer mb-0 text-muted text-center footer_change_pw">
+        &copy; 2020
+    </p>
+    <!-- Footer end -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="../../../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+    <script src="/js/popper.min.js" crossorigin="anonymous"></script>
+    <script src="/js/bootstrap.min.js"></script>
+</body>
+
+</html>
